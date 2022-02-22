@@ -20,6 +20,20 @@ void StlSwap(int& a, int& b)
 	std::swap(a, b);
 }
 
+int Mul(int a, int b) {
+	int prodct{ 0 };
+	while (b > 0) 
+	{
+		if (b & 1) 
+		{
+			prodct += a;
+		}
+		a = a << 1;
+		b = b >> 1;
+	}
+	return prodct;
+}
+
 int Add(int a, int b)
 {
 	while (b != 0)
@@ -33,14 +47,14 @@ int Add(int a, int b)
 
 int Subtract(int a, int b)
 {
-	b *= -1;
+	b = Mul(-1, b);
 	return Add(a, b);
 }
 
 void BitwiseSwap(int& a, int& b)
 {
-	a = Add(a,b);
-	b = Subtract(a,b);
+	a = Add(a, b);
+	b = Subtract(a, b);
 	a = Subtract(a, b);
 }
 

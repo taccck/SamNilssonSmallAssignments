@@ -12,6 +12,6 @@ template <typename T>
 void PrintTemplateSwap(T& a, T& b)
 {
 	std::cout << "Before template swap: a=" << a << ", b=" << b << std::endl;
-	TemplateSwap(a, b);
+	TemplateSwap<T>(a, b);
 	std::cout << "After template swap: a=" << a << ", b=" << b << std::endl << std::endl;
 }
