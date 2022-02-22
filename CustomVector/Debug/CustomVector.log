@@ -1,0 +1,5 @@
+﻿  Input.cpp
+C:\Projects\PracticeStuff\SmallAssignmentsCpp\CustomVector\Input.cpp(22,43): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  main.cpp
+  Generating Code...
+  CustomVector.vcxproj -> C:\Projects\PracticeStuff\SmallAssignmentsCpp\Debug\CustomVector.exe
